@@ -1,7 +1,7 @@
 ﻿
 namespace Personel_Kayit_Programi
 {
-    partial class Form1
+    partial class FrmAnaForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace Personel_Kayit_Programi
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.MskMaas = new System.Windows.Forms.MaskedTextBox();
@@ -48,6 +48,7 @@ namespace Personel_Kayit_Programi
             this.TxtSoyad = new System.Windows.Forms.TextBox();
             this.TxtAd = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnRaporlar = new System.Windows.Forms.Button();
             this.BtnGrafikler = new System.Windows.Forms.Button();
             this.Btnistatistik = new System.Windows.Forms.Button();
             this.BtnTemizle = new System.Windows.Forms.Button();
@@ -98,7 +99,7 @@ namespace Personel_Kayit_Programi
             this.groupBox1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(386, 363);
+            this.groupBox1.Size = new System.Drawing.Size(386, 392);
             this.groupBox1.TabIndex = 222;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personel Kayıt";
@@ -237,6 +238,7 @@ namespace Personel_Kayit_Programi
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.BtnRaporlar);
             this.groupBox2.Controls.Add(this.BtnGrafikler);
             this.groupBox2.Controls.Add(this.Btnistatistik);
             this.groupBox2.Controls.Add(this.BtnTemizle);
@@ -246,23 +248,34 @@ namespace Personel_Kayit_Programi
             this.groupBox2.Controls.Add(this.BtnListele);
             this.groupBox2.Location = new System.Drawing.Point(406, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(292, 362);
+            this.groupBox2.Size = new System.Drawing.Size(292, 392);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "İşlemler";
             // 
+            // BtnRaporlar
+            // 
+            this.BtnRaporlar.Location = new System.Drawing.Point(49, 342);
+            this.BtnRaporlar.Name = "BtnRaporlar";
+            this.BtnRaporlar.Size = new System.Drawing.Size(200, 37);
+            this.BtnRaporlar.TabIndex = 9;
+            this.BtnRaporlar.Text = "Raporlar";
+            this.BtnRaporlar.UseVisualStyleBackColor = true;
+            this.BtnRaporlar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // BtnGrafikler
             // 
-            this.BtnGrafikler.Location = new System.Drawing.Point(31, 299);
+            this.BtnGrafikler.Location = new System.Drawing.Point(49, 299);
             this.BtnGrafikler.Name = "BtnGrafikler";
-            this.BtnGrafikler.Size = new System.Drawing.Size(200, 38);
+            this.BtnGrafikler.Size = new System.Drawing.Size(200, 37);
             this.BtnGrafikler.TabIndex = 8;
             this.BtnGrafikler.Text = "Grafikler";
             this.BtnGrafikler.UseVisualStyleBackColor = true;
+            this.BtnGrafikler.Click += new System.EventHandler(this.BtnGrafikler_Click);
             // 
             // Btnistatistik
             // 
-            this.Btnistatistik.Location = new System.Drawing.Point(31, 255);
+            this.Btnistatistik.Location = new System.Drawing.Point(49, 255);
             this.Btnistatistik.Name = "Btnistatistik";
             this.Btnistatistik.Size = new System.Drawing.Size(200, 38);
             this.Btnistatistik.TabIndex = 7;
@@ -272,7 +285,7 @@ namespace Personel_Kayit_Programi
             // 
             // BtnTemizle
             // 
-            this.BtnTemizle.Location = new System.Drawing.Point(31, 211);
+            this.BtnTemizle.Location = new System.Drawing.Point(49, 211);
             this.BtnTemizle.Name = "BtnTemizle";
             this.BtnTemizle.Size = new System.Drawing.Size(200, 38);
             this.BtnTemizle.TabIndex = 6;
@@ -282,7 +295,7 @@ namespace Personel_Kayit_Programi
             // 
             // BtnGuncelle
             // 
-            this.BtnGuncelle.Location = new System.Drawing.Point(31, 167);
+            this.BtnGuncelle.Location = new System.Drawing.Point(49, 167);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(200, 38);
             this.BtnGuncelle.TabIndex = 5;
@@ -292,7 +305,7 @@ namespace Personel_Kayit_Programi
             // 
             // BtnSil
             // 
-            this.BtnSil.Location = new System.Drawing.Point(31, 123);
+            this.BtnSil.Location = new System.Drawing.Point(49, 123);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(200, 38);
             this.BtnSil.TabIndex = 4;
@@ -302,7 +315,7 @@ namespace Personel_Kayit_Programi
             // 
             // BtnKaydet
             // 
-            this.BtnKaydet.Location = new System.Drawing.Point(31, 79);
+            this.BtnKaydet.Location = new System.Drawing.Point(49, 79);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(200, 38);
             this.BtnKaydet.TabIndex = 3;
@@ -312,7 +325,7 @@ namespace Personel_Kayit_Programi
             // 
             // BtnListele
             // 
-            this.BtnListele.Location = new System.Drawing.Point(31, 35);
+            this.BtnListele.Location = new System.Drawing.Point(49, 35);
             this.BtnListele.Name = "BtnListele";
             this.BtnListele.Size = new System.Drawing.Size(200, 38);
             this.BtnListele.TabIndex = 2;
@@ -323,9 +336,9 @@ namespace Personel_Kayit_Programi
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Location = new System.Drawing.Point(2, 370);
+            this.groupBox3.Location = new System.Drawing.Point(2, 400);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(930, 221);
+            this.groupBox3.Size = new System.Drawing.Size(933, 253);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Kayıtlar";
@@ -348,7 +361,7 @@ namespace Personel_Kayit_Programi
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(924, 186);
+            this.dataGridView1.Size = new System.Drawing.Size(927, 218);
             this.dataGridView1.TabIndex = 30;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
@@ -444,12 +457,12 @@ namespace Personel_Kayit_Programi
             this.label8.Visible = false;
             this.label8.TextChanged += new System.EventHandler(this.label8_TextChanged);
             // 
-            // Form1
+            // FrmAnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(934, 616);
+            this.ClientSize = new System.Drawing.Size(934, 657);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox3);
@@ -457,7 +470,7 @@ namespace Personel_Kayit_Programi
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "FrmAnaForm";
             this.Text = "Personel Kayıt Formu";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
@@ -513,6 +526,7 @@ namespace Personel_Kayit_Programi
         private System.Windows.Forms.DataGridViewTextBoxColumn perMeslekDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button BtnRaporlar;
     }
 }
 
